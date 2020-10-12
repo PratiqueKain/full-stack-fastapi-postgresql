@@ -109,11 +109,11 @@ The input variables, with their default values (some auto generated) are:
 * `smtp_user`: The user to use in the SMTP connection. The value will be given by your email provider.
 * `smtp_password`: The password to be used in the SMTP connection. The value will be given by the email provider.
 * `smtp_emails_from_email`: The email account to use as the sender in the notification emails, it would be something like `info@your-custom-domain.com`.
- 
+
 * `postgres_password`: Postgres database password. Use the method above to generate it. (You could easily modify it to use MySQL, MariaDB, etc).
 * `pgadmin_default_user`: PGAdmin default user, to log-in to the PGAdmin interface.
 * `pgadmin_default_user_password`: PGAdmin default user password. Generate it with the method above.
- 
+
 * `traefik_constraint_tag`: The tag to be used by the internal Traefik load balancer (for example, to divide requests between backend and frontend) for production. Used to separate this stack from any other stack you might have. This should identify each stack in each environment (production, staging, etc).
 * `traefik_constraint_tag_staging`: The Traefik tag to be used while on staging.
 * `traefik_public_constraint_tag`: The tag that should be used by stack services that should communicate with the public.
@@ -260,6 +260,7 @@ After using this generator, your new project (the directory created) will contai
 ### 0.1.1
 
 Several bug fixes since initial publication, including:
+* cloning in GitHub
 
 * Order of path operations for users.
 * Frontend sending login data in the correct format.
